@@ -13,11 +13,13 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--dark);
-  background-color: var(--background-color);
 }
 
 /* header */
 
+.header-container {
+  background-color: var(--white-background);
+}
 .header-logo {
   font-family: 'Raleway';
   font-weight: 800;
@@ -46,12 +48,20 @@ body {
   text-decoration: none;
   color: var(--dark);
 }
+.nav-link:active {
+  color: var(--pressed-state);
+}
 .contacts {
+  font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text);
   text-decoration: none;
+}
+.contacts:hover,
+.contacts:focus {
+  color: var(--pressed-state);
 }
 
 /* main */
@@ -79,6 +89,10 @@ body {
   letter-spacing: 0.04em;
   color: var(--white-background);
 }
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--pressed-state);
+}
 .qualities h3 {
   font-weight: 500;
   font-size: 20px;
@@ -100,6 +114,9 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--dark);
+}
+.our-team {
+  background-color: var(--light);
 }
 .our-team h2 {
   font-weight: 700;
@@ -123,6 +140,12 @@ body {
   letter-spacing: 0.02em;
   color: var(--text);
 }
+.team-card {
+  background: var(--white-background);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
 
 /* footer */
 .footer {
@@ -143,4 +166,37 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--light);
+}
+
+/* portfolo page */
+.filter-btn {
+  background-color: var(--light);
+  border: 1px solid var(--modal-background);
+  border-radius: 4px;
+  padding: 12px 24px 12px 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--primary-brand);
+  cursor: pointer;
+}
+.filter-btn:focus,
+.filter-btn:hover {
+  background-color: var(--pressed-state);
+  color: var(--white-background);
+}
+.portfolio h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+}
+.porfolio p {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text);
 }
